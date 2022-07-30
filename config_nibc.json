@@ -1,0 +1,113 @@
+{
+  "version": "3.6",
+  "appTitle": "NIBC Dashboard",
+  "apiBaseUrl": "/api",
+  "tlBaseUrl": "/gql",
+  "mock": false,
+  "debug": true,
+  "displaySettings": {
+    "darkMode": false,
+    "lastUpdate": true,
+    "animateUpdate": true,
+    "statSeparator": true,
+    "displayTarget": false,
+    "displayStatNames": true,
+    "kpiRefresh": 10,
+    "userRefresh": 5,
+    "realtime": false
+  },
+  "groups": {
+    "default": {
+      "title": "NIBC",
+      "accessGroups": ["NIBC"],
+      "workgroups": [
+        {
+          "name": "NIBC_V",
+          "group": "Inbound Calls"
+        },
+        {
+          "name": "NIBC_E",
+          "group": "Emails"
+        },
+        {
+          "name": "NIBC_CB",
+          "group": "Callbacks"
+        },
+        {
+          "name": "NIBC_FR_C",
+          "group": "Chat FR"
+        },
+        {
+          "name": "NIBC_NL_C",
+          "group": "Chat NL"
+        }
+      ]
+    }
+  },
+  "statusColorCodes": {
+    "Available": "green",
+    "Out of the office": "red",
+    "Outbound": "orange",
+    "Break": "pink",
+    "In Call": "yellow",
+    "Follow Up": "blue",
+    "Available, Fulfilment": "green",
+    "Fulfilment": "purple",
+    "In a meeting": "grey"
+  },
+  "statistics": [
+    {
+      "label": "Interactions Waiting",
+      "queryField": "interactionsWaiting",
+      "targetLevels": [4, 7],
+      "display": "queue"
+    },
+    {
+      "label": "Longest Interaction Waiting",
+      "queryField": "longestWaitTimeInSecond",
+      "targetLevels": [40, 80],
+      "display": "timer"
+    },
+    {
+      "label": "Interactions Received",
+      "queryField": "currentShiftInteractionEntered",
+      "evaluate": "ININ.Queue_Interval|ININ.Workgroup_InteractionsEntered"
+    },
+    {
+      "label": "Interactions Answered",
+      "queryField": "currentShiftInteractionAnswered",
+      "evaluate": "ININ.Queue_Interval|ININ.Workgroup_InteractionsAnswered"
+    },
+    {
+      "label": "% Answered",
+      "queryField": "accesssibilityRate",
+      "evaluate": {
+        "type": "ratio",
+        "value1": "ININ.Queue_Interval|ININ.Workgroup_InteractionsAnswered",
+        "value2": "ININ.Queue_Interval|ININ.Workgroup_InteractionsEntered"
+      },
+      "targetLevels": [-90, -80],
+      "display": "level"
+    },
+    {
+      "label": "Interactions Abandoned",
+      "queryField": "currentShiftInteractionAbandonned",
+      "evaluate": "ININ.Queue_Interval|ININ.Workgroup_InteractionsAbandoned"
+    },
+    {
+      "label": "Active Inbound Calls",
+      "queryField": "onInboundACDInteractions"
+    },
+    {
+      "label": "% Abandoned",
+      "queryField": "abandonnedRate",
+      "evaluate": {
+        "type": "ratio",
+        "value1": "ININ.Queue_Interval|ININ.Workgroup_InteractionsAbandoned",
+        "value2": "ININ.Queue_Interval|ININ.Workgroup_InteractionsEntered"
+      },
+      "targetLevels": [10, 20],
+      "display": "level"
+    }
+  ]
+}

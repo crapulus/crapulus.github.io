@@ -1,0 +1,305 @@
+{
+  "version": "20220725",
+  "appTitle": "N-ALLO Dashboard",
+  "apiBaseUrl": "https://kpi.n-allo.be/ccdev",
+  "tlBaseUrl": "/gql",
+  "wallboardId": "V4_DEVLOCAL",
+  "mock": false,
+  "debug": true,
+  "displaySettings": {
+    "darkMode": false,
+    "lastUpdate": true,
+    "animateUpdate": true,
+    "statSeparator": true,
+    "displayTarget": false,
+    "displayStatNames": true,
+    "kpiRefresh": 30,
+    "userRefresh": 20,
+    "resetTimeActive": true,
+    "zoomLevel": 0,
+    "zoomLevel2": 0,
+    "resetTime": "00:05"
+  },
+  "groups": {
+    "main": {
+      "title": "Demo Dashboard",
+      "workgroups": [
+        {
+          "name": "AFFINION_OVF_V",
+          "group": "Affinion - Voice",
+          "threshold": [
+            0.95
+          ]
+        },
+        {
+          "name": "AFFINION_V",
+          "group": "Affinion - Voice",
+          "threshold": [
+            0.95
+          ]
+        },
+        {
+          "name": "BRU_HD_CB",
+          "group": "Brutele HD - Call Back",
+          "label": "HD",
+          "position" : 1,
+          "color": "#A0A",
+          "treshold": [
+            0,
+            9
+          ]
+        },
+        {
+          "name": "BRU_HD_V",
+          "group": "Brutele HD - Voice",
+          "treshold": [
+            0,
+            9
+          ]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "threshold": [
+            0.95
+          ]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_NL_V",
+          "group": "ENGIE NL Home Service - Voice",
+          "threshold": [
+            0.95
+          ]
+        },
+        {
+          "name": "N-ALLO_SPOC_V",
+          "group": "N-ALLO - Spoc",
+          "label": "SPC",
+          "position" : 2,
+          "color": "#F0A",
+          "treshold": [
+            0,
+            9
+          ]
+        },
+        {
+          "name": "RTBF_E",
+          "group": "RTBF - Email",
+          "label": "RTB",
+          "position" : 3,
+          "color": "#0E2",
+          "threshold": [
+            0.95
+          ]
+        }
+      ]
+    },
+    "bl": {
+      "title": "SPSU/BL Dashboard",
+      "maxTicksBeforeRefresh": 2,
+      "realtime": true,
+      "statSeparator": true,
+      "workgroups": [
+        {
+          "name": "LPA_INTRAMUROS_V",
+          "group": "SPSU",
+          "position": 1,
+          "label": "IM",
+          "color": "#92D050",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_EXTRAMUROS_V",
+          "group": "SPSU",
+          "position": 2,
+          "label": "EM",
+          "color": "#92D050",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_SIGNALERINGEN_V",
+          "group": "SPSU",
+          "position": 4,
+          "label": "RTIC",
+          "color": "#CC9966"
+        },
+        {
+          "name": "LPA_CC_OVF_V",
+          "group": "SPSU",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_DISPATCH_OVF_V",
+          "group": "SPSU",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_CAMERA_V",
+          "position": 5,
+          "label": "CAM",
+          "color": "#CC9966",
+          "group": "SPSU",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_OL_OVF_V",
+          "group": "SPSU",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_RTIC_OVF_V",
+          "group": "SPSU",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_CP_GO1_V",
+          "position": 8,
+          "label": "GO1",
+          "color": "#CC66CC",
+          "group": "SPSU",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_CP_GO2_V",
+          "group": "SPSU",
+          "position": 9,
+          "label": "GO2",
+          "color": "#CC66CC",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_CP_OPS1_V",
+          "group": "SPSU",
+          "position": 10,
+          "label": "OPS1",
+          "color": "#CC66CC",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_CP_OPS2_V",
+          "group": "SPSU",
+          "position": 11,
+          "label": "OPS2",
+          "color": "#CC66CC",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_COF_V",
+          "position": 6,
+          "label": "COM",
+          "color": "#FFFF00",
+          "group": "SPSU",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_VERKEER_V",
+          "group": "SPSU",
+          "position": 3,
+          "label": "VER",
+          "color": "#92D050",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_TEAMLEIDER_V",
+          "group": "SPSU",
+          "position": 7,
+          "label": "TL",
+          "color": "#FFFF00",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_BLAUWELIJN_V",
+          "group": "Blauwe Lijn",
+          "position": 12,
+          "label": "BL",
+          "color": "#0070C0",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LPA_AFSPRAKENLIJN_V",
+          "group": "Blauwe Lijn",
+          "position": 13,
+          "label": "AFS",
+          "color": "#CCFFFF",
+          "threshold": [0.95]
+        }
+      ]
+    }
+  },
+
+  "statusColorCodes": {
+    "Available": "green",
+    "Out of the office": "red",
+    "Outbound": "orange",
+    "Break": "pink",
+    "In Call": "yellow",
+    "Follow Up": "blue",
+    "Available, Fulfilment": "green",
+    "Fulfilment": "purple",
+    "In a meeting": "grey",
+    "Ready": "green",
+    "Not Ready": "red",
+    "Not Ready - Lunch": "red",
+    "Not Ready - Pauze": "red",
+    "Not Ready - Take5": "red",
+    "Not Ready - Administration": "red",
+    "Not Ready - Beschikking": "red",
+    "Logoff": "red",
+    "AcdAgentNotAnswering": "pink",
+    "ERROR - WrapUp NOK": "teal"
+  },
+   "statusIcons": {
+    "In Call": "fa fa-phone",
+    "Fulfilment": "fa fa-file",
+   "Break": "fa fa-coffee",
+    "Available, Fulfilment": "fa fa-file",
+    "Out of the office": "fa fa-user-clock",
+    "Logoff": "fa fa-clock",
+    "In a meeting": "fa fa-people-group"
+   },
+  "statistics": [
+    {
+      "label": "Waiting",
+      "queryField": "interactionsWaiting",
+      "targetLevels": [
+        1,
+        10
+      ],
+      "display": "queue"
+    },
+    {
+      "label": "Max Wait",
+      "queryField": "longestWaitTimeInSecond",
+      "targetLevels": [
+        20,
+        60
+      ],
+      "display": "timer"
+    },
+    {
+      "label": "Received",
+      "queryField": "currentShiftInteractionEntered"
+    },
+    {
+      "label": "Answered",
+      "queryField": "currentShiftInteractionAnswered"
+    },
+    {
+      "label": "% Accessibility",
+      "queryField": "accesssibilityRate",
+      "targetLevels": [
+        -95,
+        -95
+      ],
+      "display": "level"
+    },
+    {
+      "label": "Abandoned",
+      "queryField": "currentShiftInteractionAbandonned"
+    },
+    {
+      "label": "Active Inbound Calls",
+      "queryField": "onInboundACDInteractions"
+    }
+  ]
+}

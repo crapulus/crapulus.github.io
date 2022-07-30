@@ -1,0 +1,871 @@
+{
+  "version": "3.6",
+  "appTitle": "N-ALLO Dashboard",
+  "apiBaseUrl": "/api",
+  "tlBaseUrl": "/gql",
+  "wallboardId": "NAL",
+  "mock": false,
+  "debug": true,
+  "displaySettings": {
+    "darkMode": false,
+    "lastUpdate": true,
+    "animateUpdate": true,
+    "statSeparator": true,
+    "displayTarget": false,
+    "displayStatNames": true,
+    "kpiRefresh": 10,
+    "userRefresh": 5,
+    "realtime": false
+  },
+  "groups": {
+    "f1": {
+      "title": "GOSSELIES 1er - ENGIE + La Sambrienne",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "EEBL_ACQUISITION_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_ENG_005_HOME_FR_V",
+          "group": "ENGIE FR - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_FR_C",
+          "group": "ENGIE FR - Chat",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_HOMEDAY_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_PROF_FR_V",
+          "group": "ENGIE FR Prof - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_RESI_FR_V",
+          "group": "ENGIE FR - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_RETENTION_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_WINBACK_RESI_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LA_SAMBRIENNE_LOT1_V",
+          "group": "La Sambrienne Lot 1 - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "LA_SAMBRIENNE_LOT2_V",
+          "group": "La Sambrienne Lot 2 - Voice",
+          "threshold": [0.95]
+        }
+      ]
+    },
+    "f2": {
+      "title": "GOSSELIES 2ème - BRUTELE + AFFINION + RTBF + PERM",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "AFFINION_OVF_V",
+          "group": "Affinion - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "AFFINION_V",
+          "group": "Affinion - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "BETFIRST_V",
+          "group": "Betfirst - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "BRU_CRECO_V",
+          "group": "Brutele Creco - From Outbound",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "BRU_HD_CB",
+          "group": "Brutele HD - Call Back",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "BRU_HD_EN-NL_V",
+          "group": "Brutele HD EN/NL - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "BRU_HD_V",
+          "group": "Brutele HD - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "BRU_RETENTION_V",
+          "group": "Brutele Retention - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "DIGITOPIA_V",
+          "group": "Digitopia - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_NL_V",
+          "group": "ENGIE NL Home Service - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBLEM_FR_V",
+          "group": "EEBL Emergency FR - Voice",
+          "treshold": [1]
+        },
+        {
+          "name": "EEBLEM_NL_V",
+          "group": "EEBL Emergency NL - Voice",
+          "treshold": [1]
+        },
+        {
+          "name": "LA_SAMBRIENNE_LOT2_V",
+          "group": "La Sambrienne Lot 2 - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "N-ALLO_SPOC_V",
+          "group": "N-ALLO - Spoc",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "OVB_DE_V",
+          "group": "Salduz GE - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "OVB_FR_V",
+          "group": "Salduz FR - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "OVB_NL_V",
+          "group": "Salduz NL - Voice",
+          "treshold": [0, 9]
+        },
+        { "name": "RTBF_CDO_V", "group": "RTBF - Voice", "threshold": [0.95] },
+        { "name": "RTBF_E", "group": "RTBF - Email", "threshold": [0.95] },
+        {
+          "name": "TECHNILIFT_CARE_V",
+          "group": "Technilift Care - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "TECHNILIFT_EM_V",
+          "group": "Technilift Emergency - Voice",
+          "threshold": [0.95]
+        }
+      ]
+    },
+    "f3": {
+      "title": "Mechelen ENGIE + Multimedia",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "CAMPINA_V",
+          "group": "Friesland - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "EEBL_NL_C",
+          "group": "ENGIE NL - Chat",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_PROF_NL_V",
+          "group": "ENGIE NL Prof - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_RESI_EN_V",
+          "group": "ENGIE EN - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBL_RESI_NL_V",
+          "group": "ENGIE NL - Voice",
+          "threshold": [0.95]
+        },
+        {
+          "name": "EEBLEM_FR_V",
+          "group": "EEBL Emergency FR - Voice",
+          "treshold": [1]
+        },
+        {
+          "name": "EEBLEM_NL_V",
+          "group": "EEBL Emergency NL - Voice",
+          "treshold": [1]
+        },
+        {
+          "name": "MILNER_V",
+          "group": "Friesland - Voice",
+          "treshold": [0, 9]
+        },
+        { "name": "COZIE_V", "group": "Cozie - Voice", "treshold": [0, 9] }
+      ]
+    },
+    "f4": {
+      "title": "Mechelen 2de Vaillant",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "BULEX_FR_V",
+          "group": "Vaillant/Bulex FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "BULEX_INSTALLERS_FR_V",
+          "group": "Vaillant/Bulex Installers FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "BULEX_INSTALLERS_NL_V",
+          "group": "Vaillant/Bulex Installers NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "BULEX_NL_V",
+          "group": "Vaillant/Bulex NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_FR_V",
+          "group": "Vaillant/Bulex FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_INSTALLERS_FR_V",
+          "group": "Vaillant/Bulex Installers FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_INSTALLERS_NL_V",
+          "group": "Vaillant/Bulex Installers NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_MO",
+          "group": "Vaillant/Bulex - Manual Outbound",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_NL_V",
+          "group": "Vaillant/Bulex NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_SPOC_V",
+          "group": "Vaillant/Bulex SPOC - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_TECH_FR_V",
+          "group": "Vaillant/Bulex TECH FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "VAILLANT_TECH_NL_V",
+          "group": "Vaillant/Bulex TECH NL - Voice",
+          "treshold": [0, 95]
+        },
+        { "name": "VAILLANT_BULEX_CM_FR_CB", "label": "CM - Callbacks FR" },
+        { "name": "VAILLANT_BULEX_CM_NL_CB", "label": "CM - Callbacks NL" }
+      ]
+    },
+    "f5": {
+      "title": "Mechelen Ieper - Engie + BizBike",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "BIZBIKE_NED_V",
+          "group": "Bizbike - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "BIZBIKE_V",
+          "group": "Bizbike - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_ACQUISITION_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_ACQUISITION_NL_V",
+          "group": "ENGIE NL Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_ENG_005_HOME_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_ENG_005_HOME_NL_V",
+          "group": "ENGIE NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_FR_C",
+          "group": "ENGIE FR - Chat",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMEDAY_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMEDAY_NL_V",
+          "group": "ENGIE NL Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_NL_V",
+          "group": "ENGIE NL Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_NL_C",
+          "group": "ENGIE NL - Chat",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_EN_V",
+          "group": "ENGIE EN - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_FR_V",
+          "group": "ENGIE FR Prof - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_NL_V",
+          "group": "ENGIE NL Prof - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_EN_V",
+          "group": "ENGIE EN - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_NL_V",
+          "group": "ENGIE NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RETENTION_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RETENTION_NL_V",
+          "group": "ENGIE NL Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_WINBACK_RESI_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_WINBACK_RESI_NL_V",
+          "group": "ENGIE NL Retention - Voice",
+          "treshold": [0, 95]
+        }
+      ]
+    },
+    "f6": {
+      "title": "Mechelen Ieper - Colruyt",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "COLRUYT_COLLISHOP_CO_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_COLLISHOP_CP_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_COLLISHOP_E",
+          "group": "Colruyt - Email",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_COLLISHOP_ORDER_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_COLLISHOP_OTHER_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_COLLISHOP_VD_VM",
+          "group": "Colruyt - VoiceMail",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_DREAMLAND_CO_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_DREAMLAND_CP_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_DREAMLAND_E",
+          "group": "Colruyt - Email",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_DREAMLAND_ORDER_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_DREAMLAND_OTHER_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_DREAMLAND_VD_VM",
+          "group": "Colruyt - VoiceMail",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "COLRUYT_DRIVER_V",
+          "group": "Colruyt - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_NL_V",
+          "group": "ENGIE NL - Voice",
+          "treshold": [0, 95]
+        }
+      ]
+    },
+    "f8": {
+      "title": "Ieper 2de - PartnerLine",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "BETFIRST_V",
+          "group": "Betfirst - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "BSCA_CARE_V",
+          "group": "BSCA Care - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "DIGITOPIA_V",
+          "group": "Digitopia - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "EEBL_B2P_V",
+          "group": "ENGIE Partner - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_EN_V",
+          "group": "ENGIE EN - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_GE_V",
+          "group": "ENGIE GE - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_NL_V",
+          "group": "ENGIE NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "NBB_IN_FR_V",
+          "group": "National Bank - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "NBB_IN_NL_EN_V",
+          "group": "National Bank - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "OVB_DE_V",
+          "group": "Salduz GE - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "OVB_FR_V",
+          "group": "Salduz FR - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "OVB_NL_V",
+          "group": "Salduz NL - Voice",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "TECHNILIFT_CARE_V",
+          "group": "Technilift Care - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "TECHNILIFT_EM_V",
+          "group": "Technilift Emergency - Voice",
+          "treshold": [0, 95]
+        }
+      ]
+    },
+    "f9": {
+      "title": "Bru Engie Akzo Outbound",
+      "accessGroups": [],
+      "workgroups": [
+        { "name": "AKZO_V", "group": "Akzo - Voice", "treshold": [0, 9] },
+        {
+          "name": "EEBL_ACQUISITION_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_ENG_005_HOME_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_V",
+          "group": "ENGIE Campaign - From Outbound",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMEDAY_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_FR_V",
+          "group": "ENGIE FR Prof - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_GE_V",
+          "group": "ENGIE GE - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_GE_V",
+          "group": "ENGIE GE - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RETENTION_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_WINBACK_RESI_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "MERCEDES_V",
+          "group": "Mercedes - From Outbound",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "NBB_V",
+          "group": "National Bank - From Outbound",
+          "treshold": [0, 9]
+        }
+      ]
+    },
+    "f10": {
+      "title": "Gent - Engie + Stad Gent + Outbound",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "EEBL_ACQUISITION_NL_V",
+          "group": "ENGIE NL Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_ENG_005_HOME_NL_V",
+          "group": "ENGIE NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_V",
+          "group": "ENGIE Campaign - From Outbound",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMEDAY_NL_V",
+          "group": "ENGIE NL Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_NL_V",
+          "group": "ENGIE NL Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_EN_V",
+          "group": "ENGIE EN - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_FR_V",
+          "group": "ENGIE FR Prof - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_NL_V",
+          "group": "ENGIE NL Prof - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_EN_V",
+          "group": "ENGIE EN - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_NL_V",
+          "group": "ENGIE NL - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RETENTION_NL_V",
+          "group": "ENGIE NL Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_WINBACK_RESI_NL_V",
+          "group": "ENGIE NL Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "MERCEDES_V",
+          "group": "Mercedes - From Outbound",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "NBB_V",
+          "group": "National Bank - From Outbound",
+          "treshold": [0, 9]
+        },
+        {
+          "name": "STADGENT_FO_V",
+          "group": "Stad Gent - Front Office",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "STADGENT_MO_V",
+          "group": "Stad Gent - Midden Office",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "STADGENT_OVF_V",
+          "group": "Stad Gent Overflow - Voice",
+          "treshold": [0, 95]
+        }
+      ]
+    },
+    "f11": {
+      "title": "Eupen - Engie + OVB",
+      "accessGroups": [],
+      "workgroups": [
+        {
+          "name": "EEBL_B2P_V",
+          "group": "ENGIE Partner - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_ENG_005_HOME_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_CAMPAIGN_V",
+          "group": "ENGIE Campaign - From Outbound",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMEDAY_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_HOMENIGHT_FR_V",
+          "group": "ENGIE FR Home Service - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_FR_V",
+          "group": "ENGIE FR Prof - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_PROF_GE_V",
+          "group": "ENGIE GE - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_FR_V",
+          "group": "ENGIE FR - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RESI_GE_V",
+          "group": "ENGIE GE - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_RETENTION_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        {
+          "name": "EEBL_WINBACK_RESI_FR_V",
+          "group": "ENGIE FR Retention - Voice",
+          "treshold": [0, 95]
+        },
+        { "name": "OVB_DE_V", "group": "Salduz GE - Voice", "treshold": [0, 9] }
+      ]
+    }
+  },
+  "statusColorCodes": {
+    "Available": "green",
+    "Out of the office": "red",
+    "Outbound": "orange",
+    "Break": "pink",
+    "In Call": "yellow",
+    "Follow Up": "blue",
+    "Available, Fulfilment": "green",
+    "Fulfilment": "purple",
+    "In a meeting": "grey"
+  },
+  "statistics": [
+    {
+      "label": "Interactions Waiting",
+      "evaluate": "ININ.Workgroup_InteractionsWaiting",
+      "queryField": "interactionsWaiting",
+      "targetLevels": [1, 10],
+      "display": "queue"
+    },
+    {
+      "label": "Longest Interaction Waiting",
+      "evaluate": "ININ.Workgroup_LongestWaitTime",
+      "queryField": "longestWaitTimeInSecond",
+      "targetLevels": [20, 60],
+      "display": "timer"
+    },
+    {
+      "label": "Interactions Received",
+      "queryField": "currentShiftInteractionEntered",
+      "evaluate": "ININ.Queue_Interval|ININ.Workgroup_InteractionsEntered"
+    },
+    {
+      "label": "Interactions Answered",
+      "queryField": "currentShiftInteractionAnswered",
+      "evaluate": "ININ.Queue_Interval|ININ.Workgroup_InteractionsAnswered"
+    },
+    {
+      "label": "% Accessibility",
+      "queryField": "accesssibilityRate",
+      "evaluate": {
+        "type": "ratio",
+        "value1": "ININ.Queue_Interval|ININ.Workgroup_InteractionsAnswered",
+        "value2": "ININ.Queue_Interval|ININ.Workgroup_InteractionsEntered"
+      },
+      "targetLevels": [-95, -95],
+      "display": "level"
+    },
+    {
+      "label": "Interactions Abandoned",
+      "queryField": "currentShiftInteractionAbandonned",
+      "evaluate": "ININ.Queue_Interval|ININ.Workgroup_InteractionsAbandoned"
+    },
+    {
+      "label": "Active Inbound Calls",
+      "queryField": "onInboundACDInteractions"
+    }
+  ]
+}

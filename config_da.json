@@ -1,0 +1,334 @@
+{
+  "tlBaseUrl": "/gql",
+  "debug": true,
+  "appTitle": "DA Dashboard",
+  "wallboardId": "SPSUBL",
+  "displaySettings": {
+    "darkMode": false,
+    "lastUpdate": true,
+    "animateUpdate": true,
+    "statSeparator": true,
+    "displayTarget": false,
+    "displayStatNames": false,
+    "kpiRefresh": 20,
+    "userRefresh":-1
+  },
+  "groups": {
+    "main": {
+      "title": "Main Board",
+    
+      "workgroups": [
+        {
+          "name": "EEBL_CAMPAIGN_V",
+          "group": "Engie Campaigns"
+        },
+          {
+          "name": "NBB_V",
+          "group": "BNB Inbound"
+        }
+      ]
+    },
+    "hd": {
+      "title": "HelpDesk",
+      "accessGroup": "DA HELPDESK",
+      "workgroups": [
+        {
+          "name": "DA_HELPDESK_V",
+          "group": "HelpDesk"
+        }
+      ]
+    },
+    "abc": {
+      "title": "ABC",
+      "accessGroup": "DA ABC",
+      "workgroups": [
+        {
+          "name": "DA_ABC_V",
+          "group": "ABC"
+        }
+      ]
+    },
+    "bl": {
+      "title": "Bedrijvenloket",
+      "accessGroup": "DA BL",
+      "workgroups": [
+        {
+          "name": "BL_BEDRIJVENLOKET_V",
+          "group": "BEDRIJVENLOKET"
+        }
+      ]
+    },
+    "lez": {
+      "title": "LEZ",
+      "accessGroup": "DA SW LEZ",
+      "workgroups": [
+        {
+          "name": "SW_LEZ_V",
+          "group": "LEZ"
+        }
+      ]
+    },
+    "mja": {
+      "title": "MELDJEAAN",
+      "accessGroup": "DA CC",
+      "workgroups": [
+        {
+          "name": "CC_MELDJEAAN_V",
+          "group": "MELDJEAAN"
+        },
+        {
+          "name": "CC_MJA_LAGER_V",
+          "group": "LAGER"
+        },
+        {
+          "name": "CC_MJA_MIDDELBAAR_V",
+          "group": "MIDDELBAAR"
+        }
+      ]
+    },
+    "mpa": {
+      "title": "MPA GAPA",
+      "accessGroup": "DA GAPA",
+      "workgroups": [
+        {
+          "name": "MPA_GAPA_V",
+          "group": "MPA / GAPA"
+        }
+      ]
+    },
+    "ts": {
+      "title": "TS",
+      "accessGroup": "DA SW TS",
+      "workgroups": [
+        {
+          "name": "SW_TS_V",
+          "group": "TS"
+        }
+      ]
+    },
+    "sv": {
+      "title": "SV",
+      "accessGroup": "DA SW SV",
+      "workgroups": [
+        {
+          "name": "SW_SV_V",
+          "group": "SV"
+        },
+        {
+          "name": "SW_MV_V",
+          "group": "MV"
+        }
+      ]
+    },
+    "pm": {
+      "title": "PM Infoplus",
+      "accessGroup": "DA PM",
+      "workgroups": [
+        {
+          "name": "PM_ALGEMEEN_V",
+          "group": "ALGEMEEN"
+        },
+        {
+          "name": "PM_ZIEKTE_V",
+          "group": "ZIEKTE"
+        }
+      ]
+    },
+    "dl": {
+      "title": "DL",
+      "accessGroup": "DA DL",
+      "workgroups": [
+        {
+          "name": "DL_2E_LIJN_V",
+          "group": "2de Line"
+        },
+        {
+          "name": "DL_LEVERING_V",
+          "group": "Levering"
+        }
+      ]
+    },
+    "lpa": {
+      "title": "LPA",
+      "accessGroup": "LPA HRM",
+      "workgroups": [
+        {
+          "name": "LPA_HRM_V",
+          "group": "HRM"
+        }
+      ]
+    },
+    "lpahrm": {
+      "title": "LPA HRM",
+      "accessGroup": "LPA HRM",
+      "workgroups": [
+        {
+          "name": "LPA_HRM_V",
+          "group": "HRM"
+        }
+      ]
+    },
+    "lpaict": {
+      "title": "LPA ICT",
+      "accessGroup": "LPA ICT",
+      "workgroups": [
+        {
+          "name": "LPA_ICT_HELPDESK_V",
+          "group": "HELPDESK"
+        },
+        {
+          "name": "LPA_ICT_ONTHAAL_V",
+          "group": "ONTHAAL"
+        }
+      ]
+    },
+    "lparegio": {
+      "title": "LPA REGIO",
+      "accessGroup": "LPA REGIO",
+      "workgroups": [
+        {
+          "name": "LPA_REGIO_V",
+          "group": "REGIO"
+        }
+      ]
+    },
+    "scc": {
+      "title": "SCC",
+     
+      "workgroups": [
+        {
+          "name": "SCC_GRABBEL_V",
+          "group": "CRISIS"
+        },
+        {
+          "name": "SCC_AFSPRAKEN_V",
+          "group": "AFSPRAKEN"
+        },
+        {
+          "name": "SCC_GROFVUIL_V",
+          "group": "GROFVUIL"
+        },
+        {
+          "name": "SCC_BIB_V",
+          "group": "BIB",
+          "label": "BIB",
+          "position" : 1,
+          "color": "#A0A"
+        },
+        {
+          "name": "SCC_SOCIALEHULP_V",
+          "group": "SOCIALEHULP"
+        },
+        {
+          "name": "SCC_INFO_V",
+          "group": "INFO"
+          ,"label": "NFO",
+          "position" : 2,
+          "color": "#055"
+        },
+        {
+          "name": "SCC_TOERISME_V",
+          "group": "TOERISME"
+        },
+        {
+          "name": "SCC_SLUIKSTORT_V",
+          "group": "SLUIKSTORT"
+        },
+        {
+          "name": "CC_LVZ_V",
+          "group": "LVZ"
+        },
+        {
+          "name": "SCC_CORONA_INFOLIJN_V",
+          "group": "VACCINATIE"
+        }
+      ]
+    },
+    "lvz": {
+      "title": "LVZ",
+      "accessGroup": "DA LVZ",
+      "workgroups": [
+        {
+          "name": "CC_LVZ_V",
+          "group": "LVZ"
+        }
+      ]
+    },
+    "vl": {
+      "title": "Vaccinatie Lijn",
+      "accessGroup": "DA SCC",
+      "workgroups": [
+        {
+          "name": "SCC_CORONA_INFOLIJN_V",
+          "group": "Vaccinatie Lijn"
+        },
+        {
+          "name": "SCC_CORONA_INFOLIJN_CB",
+          "group": "Vaccinatie CB"
+        }
+      ]
+    },
+    "filog": {
+      "title": "Finance & Logistics",
+      "accessGroup": "LPA FILOG",
+      "workgroups": [
+        {
+          "name": "LPA_FILOG_V",
+          "group": "LPA FILOG"
+        }
+      ]
+    }
+  },
+  "statusColorCodes": {
+    "Ready": "green",
+    "Not Ready": "red",
+    "Not Ready - Lunch": "red",
+    "Not Ready - Pauze": "red",
+    "Not Ready - Take5": "red",
+    "Not Ready - Administration": "red",
+    "Not Ready - Beschikking": "red",
+    "Logoff": "red",
+    "Outbound": "orange",
+    "In Call": "yellow",
+    "Follow Up": "blue",
+    "AcdAgentNotAnswering": "pink",
+    "ERROR - WrapUp NOK": "teal"
+  },
+  "statistics": [
+    {
+      "label": "Waiting",
+      "queryField": "interactionsWaiting",
+      "targetLevels": [
+        1,
+        10
+      ],
+      "display": "queue"
+    },
+    {
+      "label": "Longest Wait",
+      "queryField": "longestWaitTimeInSecond",
+      "targetLevels": [
+        20,
+        60
+      ],
+      "display": "timer"
+    },
+    {
+      "label": "Received",
+      "queryField": "currentShiftInteractionEntered"
+    },
+    {
+      "label": "Answered",
+      "queryField": "currentShiftInteractionAnswered"
+    },
+    {
+      "label": "% Acc",
+      "queryField": "accesssibilityRate",
+      "targetLevels": [
+        -95,
+        -95
+      ],
+      "display": "level"
+    }
+  ]
+}
